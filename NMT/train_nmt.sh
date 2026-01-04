@@ -34,10 +34,10 @@ cd /home/yiyu/code/homework/NLP/ChineseNMT
 export HYDRA_FULL_ERROR=1 
 export PYTHONPATH=/home/yiyu/code/homework/NLP/ChineseNMT
 export HF_ENDPOINT=https://hf-mirror.com
-model_path="/home/yiyu/code/homework/NLP/ChineseNMT/experiment/${model_type}/${addition}/model_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}.pth"
-output_path="/home/yiyu/code/homework/NLP/ChineseNMT/experiment/${model_type}/${addition}/output_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}.txt"
-log_path="/home/yiyu/code/homework/NLP/ChineseNMT/experiment/log/${model_type}/${addition}/train_chinesenmt_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}_log.txt"
-tb_log_path="/home/yiyu/code/homework/NLP/ChineseNMT/experiment/${model_type}/tb_log/${addition}/tb_log_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}"
+model_path="/home/yiyu/code/homework/NLP/NMT/experiment/${model_type}/${addition}/model_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}.pth"
+output_path="/home/yiyu/code/homework/NLP/NMT/experiment/${model_type}/${addition}/output_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}.txt"
+log_path="/home/yiyu/code/homework/NLP/NMT/experiment/log/${model_type}/${addition}/train_chinesenmt_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}_log.txt"
+tb_log_path="/home/yiyu/code/homework/NLP/NMT/experiment/${model_type}/tb_log/${addition}/tb_log_${batch_size}bs_${lr}lr_${d_model}dm_${norm_type}_${pos_encoding_type}"
 
 # ========== 核心修改：修复命令行换行和变量引用格式 ==========
 python main.py \
